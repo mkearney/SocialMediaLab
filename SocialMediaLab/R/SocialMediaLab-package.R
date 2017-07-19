@@ -46,4 +46,5 @@
 #' @importFrom stringr str_extract str_replace_all str_match_all
 #' @importFrom stats 'na.omit'
 #' @importFrom utils "flush.console" head "install.packages" "read.table" "write.csv"
+#' @importFrom rtweet search_tweets
 NULL

@@ -5,8 +5,10 @@
 \title{Note: this function is DEPRECATED and will be removed in a future release.
 Please use the \code{Collect} function}
 \usage{
-CollectDataTwitter(searchTerm, numTweets, verbose, writeToFile, language, since,
-  until, locale, geocode, sinceID, maxID, resultType, retryOnRateLimit)
+CollectDataTwitter(searchTerm, numTweets = 100, verbose = TRUE,
+  writeToFile = FALSE, language = NULL, since = NULL, until = NULL,
+  locale, geocode = NULL, sinceID = NULL, maxID = NULL,
+  resultType = "recent", retryOnRateLimit = FALSE)
 }
 \arguments{
 \item{searchTerm}{character string, specifying a search term or phrase (e.g.
@@ -126,16 +128,15 @@ SocialMediaLab package. This will be implemented in a future release.
   g_semantic_twitter <- CreateSemanticNetwork(myTwitterData)
   }
 }
-\author{
-Timothy Graham <timothy.graham3@uq.net.au> & Robert Ackland
-<robert.ackland@anu.edu.au>
-}
 \seealso{
 \code{AuthenticateWithTwitterAPI} must be run first or no data will
 be collected.
+}
+\author{
+Timothy Graham <timothy.graham3@uq.net.au> & Robert Ackland
+<robert.ackland@anu.edu.au>
 }
 \keyword{SNA}
 \keyword{data}
 \keyword{mining}
 \keyword{twitter}
-
