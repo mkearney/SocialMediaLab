@@ -124,7 +124,7 @@ function(searchTerm, numTweets, verbose, writeToFile, language, since, until,
     writeToFile <- FALSE # default = not write to file
   }
 
-  if (verbose=="TRUE" | verbose=="true" | verbose=="T" | verbose==TRUE) {
+  if (verbose == "TRUE" | verbose == "true" | verbose=="T" | verbose==TRUE) {
     verbose <- TRUE
   }
   else {verbose <- FALSE}
