@@ -44,7 +44,9 @@ Authenticate("youtube", apiKey= apiKey) %>% Collect(videoIDs = videoIDs) %>% Cre
 Authenticate("Facebook", appID = appID, appSecret = appSecret) %>% SaveCredential("FBCredential.RDS") %>% Collect(pageName="StarWars", rangeFrom="2015-05-01",rangeTo="2015-06-03") %>% Create("Bimodal")
 
 # Authenticate with Twitter, Collect data about #auspol and Create a semantic network
-Authenticate("twitter", apiKey=myapikey, apiSecret=myapisecret,accessToken=myaccesstoken, accessTokenSecret=myaccesstokensecret) %>% Collect(searchTerm="#auspol", numTweets=150) %>% Create("Semantic")
+Authenticate("twitterapp", apiKey = myapikey, apiSecret = myapisecret) %>% 
+  Collect(searchTerm = "#auspol", numTweets = 500) %>% 
+  Create("Semantic")
 
 # Create Instagram Ego Network
 myUsernames <- 
